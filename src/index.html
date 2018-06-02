@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .loader {
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 1000;
+      transition: all 1s ease-out;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .loader>div {
+      flex-grow: 1;
+      background-color: #F2845C;
+      max-height: 25%;
+    }
+
+    .loader>div:nth-of-type(2) {
+      background-color: #F5F1D5;
+    }
+
+    .loader>div:nth-of-type(3) {
+      background-color: #B4D6C6
+    }
+
+    .loader>div:nth-of-type(4) {
+      background-color: #1B3440;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .loading {
+      opacity: 1;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Righteous" rel="stylesheet">
+  <!--[htmlclean-protect]-->
+  <!-- inject:css -->
+  <!-- endinject -->
+  <!--[/htmlclean-protect]-->
+</head>
+
+<body>
+  <!-- loading screen -->
+  <div class="loader loading">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div>
+      <span>
+        <img src="./assets/loader.svg" alt="">
+      </span>
+    </div>
+  </div>
+
+  <!-- icons -->
+  <div class="icons">
+    <span>
+      <a href="/">Resume</a>
+      <span>&rarr;</span>
+    </span>
+    <span>
+      <a href="https://www.instagram.com/ethanmakessites/">instagram </a>
+      <span>&rarr;</span>
+    </span>
+    <span>
+      <a href="https://github.com/Ethanb75">github</a>
+      <span>&rarr;</span>
+    </span>
+  </div>
+
+  <nav>
+    <div data-location="about" class="infoSection">
+      <!-- need an aria to label as button -->
+      <div class="closeSection">
+        <button>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="buttonWrap">
+        <span class="button">About</span>
+      </div>
+      <article>
+        <div>
+          <div class="sectionTitle about">
+            <h2>About</h2>
+          </div>
+          <div class="sectionContent">
+            <p>
+              My name's Ethan Bellora. I'm a web application developer, digital marketer, and UI designer from Atlanta, GA. I've been programming
+              for 5 years and have been a freelance web developer / designer / SEO specialist for the last 2 years. I've
+              worked with people of all different backgrounds; because of this i'm skilled in aligning myself to meet a client's
+              vision. In my spare time i like to play PC video games, play guitar, and hike local trails.
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div data-location="projects" class="infoSection">
+      <div class="closeSection">
+        <button>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="buttonWrap">
+        <span class="button">Projects</span>
+      </div>
+      <article>
+        <div class="projectsWrap">
+          <div class="sectionTitle projects">
+            <h2>Recent Projects</h2>
+          </div>
+          <div class="sectionContent projects">
+            <ul>
+              <li>
+                <h3>Lil Dude</h3>
+                <p>Web app for an ATL artist. features a music player</p>
+              </li>
+              <li>
+                <h3>Blessings Art Showcase</h3>
+                <p>Landing page for an art showcase in ATL.</p>
+              </li>
+              <li>
+                <h3>K$upreme NAZ</h3>
+                <p>A small webpage for an ATL artist. features a music player</p>
+              </li>
+              <li>
+                <h3>Seafood Phil</h3>
+                <p>Catering web app for a celebrity seafood chef.</p>
+              </li>
+              <li>
+                <h3>ICE Enterprises</h3>
+                <p>Webpage for a landscaping company in WA</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div data-location="contact" class="infoSection">
+      <div class="closeSection">
+        <button>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="buttonWrap">
+        <span class="button">Contact</span>
+      </div>
+      <article>
+        <div class="projectsWrap">
+          <div class="sectionTitle contact">
+            <h2>Contact Info</h2>
+          </div>
+          <div class="sectionContent contact">
+            <ul>
+              <li>
+                <a href="/">contact@ethandevelops.com</a>
+              </li>
+              <li>
+                <a href="/">(678) 633 - 4937</a>
+              </li>
+              <li>
+                <span>
+                  <a href="https://www.instagram.com/ethanmakessites/">instagram</a>
+                  &#8212;
+                </span>
+                <span>
+                  <a href="https://twitter.com/EthanBellora">twitter</a>
+                  &#8212;
+                </span>
+                <span>
+                  <a href="https://github.com/Ethanb75">github</a>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+  </nav>
+  <main>
+    <h1 class="title">
+      Ethan B.
+    </h1>
+    <div class="subTitle">
+      <span>Code</span>
+      <span>Design</span>
+      <span>Marketing</span>
+      <span>SEO</span>
+    </div>
+  </main>
+
+  <!-- Large ass file, don't use for prod -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+  <!--[htmlclean-protect]-->
+  <!-- inject:js -->
+  <!-- endinject -->
+  <!--[/htmlclean-protect]-->
+</body>
+
+</html>
