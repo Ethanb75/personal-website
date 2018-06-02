@@ -90,6 +90,10 @@ gulp.task('prod:js', function () {
     .pipe(uglify())
     .pipe(gulp.dest(paths.build))
 });
+gulp.task('prod:server', function () {
+  return gulp.src('./app.js')
+    .pipe(gulp.dest(paths.build))
+})
 gulp.task('prod:copy', ['prod:html', 'prod:css', 'prod:js'])
 gulp.task('prod:inject', ['prod:copy'], function () {
   var css = gulp.src(paths.buildCSS);
