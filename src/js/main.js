@@ -1,38 +1,4 @@
-// TweenLite.to(logo, 2, {left:"300px", onUpdate:updateHandler, 
-// onComplete:completeHandler, 
-// onCompleteParams:["animation complete!"]});
-
-
 'use strict'
-
-// function addRoutes() {
-//   let aboutEl = document.querySelector('[data-location="about"]');
-//   let projEl = document.querySelector('[data-location="projects"]');
-//   let contactEl = document.querySelector('[data-location="contact"]');
-
-//   // page.base('/');
-
-//   page('/', () => {
-//     // remove all active
-//     let active = document.querySelector('.active');
-//     if (active) {
-//       active.classList.remove('active');
-//       active.setAttribute('style', 'transform: matrix(1, 0, 0, 1, 0, 0)');
-//     }
-//   });
-
-//   page('/about', () => {
-//     aboutEl.classList.add('active');
-//     aboutEl.setAttribute('style', 'transform: matrix(1, 0, 0, 1, 0, 0) translateY(calc(-100vw + 15rem))')
-//   });
-//   page('/projects', () => {
-//     projEl.classList.add('active');
-//   });
-//   page('/contact', () => {
-//     contactEl.classList.add('active')
-//   });
-//   page();
-// }
 
 function addCloseListener(el) {
   el.addEventListener('click', ev => {
