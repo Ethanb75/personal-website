@@ -500,11 +500,29 @@ main {
   .sectionTitle.contact h2::before {
     bottom: -1.1em;
   }
+  nav > div {
+    top: 3rem;
+  }
+  nav > div:nth-of-type(2) {
+    top: 7rem;
+  }
+  nav > div:nth-of-type(3) {
+    top: 11rem;
+  }
+  nav > div.active:nth-of-type(1) {
+    transform: matrix(1,0,0,1,0,0) translateY(calc(-100vh + 13rem)) !important;
+  }
+  nav > div.active:nth-of-type(2) {
+    transform: matrix(1,0,0,1,0,0) translateY(calc(-100vh + 9rem)) !important;
+  }
+  nav > div.active:nth-of-type(3) {
+    transform: matrix(1,0,0,1,0,0) translateY(calc(-100vh + 5rem)) !important;
+  }
 }
 
 @media screen and (max-width: 385px) {
   .title {
-    font-size: 8em;
+    font-size: 7em;
   }
   div[data-location="projects"] article > div {
     position: relative;
