@@ -531,22 +531,27 @@ main {
     top: 6rem;
   }
   nav > div.active:nth-of-type(1) {
-    transform: matrix(1,0,0,1,0,0) translateY(calc(-100vh + 13rem)) !important;
+    transform: matrix(1,0,0,1,0,0) translateY(calc(-100vh + 9rem + 1.25vw)) !important
   }
   nav > div.active:nth-of-type(2) {
-    transform: matrix(1,0,0,1,0,0) translateY(calc(-100vh + 9rem)) !important;
+    transform: matrix(1,0,0,1,0,0) translateY(calc(-100vh + 6rem + 1.25vw)) !important;
   }
   nav > div.active:nth-of-type(3) {
-    transform: matrix(1,0,0,1,0,0) translateY(calc(-100vh + 5rem)) !important;
+    transform: matrix(1,0,0,1,0,0) translateY(calc(-100vh + 3rem + 1.25vw)) !important;
   }
 }
 
 @media screen and (max-width: 385px) {
   .title {
-    font-size: 7em;
+    font-size: 9em;
   }
   div[data-location="projects"] article > div {
     position: relative;
     bottom: 5rem;
+  }
+}
+@media screen and (max-width: 340px) {
+  .title {
+    font-size: 7em;
   }
 }
