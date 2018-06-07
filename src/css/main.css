@@ -386,7 +386,7 @@ main {
     width: 62vw;
   }
   .subTitle {
-    width: 62vw
+    max-width: 62vw
   }
   nav {
     bottom: calc(-100% + 15rem);
@@ -488,6 +488,7 @@ main {
   
   .title {
     font-size: 10em;
+    padding-top: 16vh
   }
   .sectionContent {
     font-size: 1.25em;
