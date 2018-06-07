@@ -15,7 +15,7 @@ html, body {
 }
 
 body {
-  padding: 1rem;
+  padding: 1.25vw;
 }
 
 nav {
@@ -28,9 +28,9 @@ nav {
 
 nav > div {
   position: absolute;
-  height: calc(100vh - 2rem);
+  height: calc(100vh - 2.5vw);
   left: 0;
-  top: 1rem;
+  top: 1.25vw;
   width: 100vw;
   background-color: #F2845C;
   z-index: 1;
@@ -107,15 +107,15 @@ div[data-location="projects"] .closeSection span {
 }
 
 nav > div.active:nth-of-type(1) {
-  transform: matrix(1, 0, 0, 1, 0, 0) translateX(calc(-100vw + 16rem)) !important;
+  transform: matrix(1, 0, 0, 1, 0, 0) translateX(calc(-100vw + 15rem + 1.25vw)) !important;
 }
 
 nav > div.active:nth-of-type(2) {
-  transform: matrix(1, 0, 0, 1, 0, 0) translateX(calc(-100vw + 11rem)) !important;
+  transform: matrix(1, 0, 0, 1, 0, 0) translateX(calc(-100vw + 10rem + 1.25vw)) !important;
 }
 
 nav > div.active:nth-of-type(3) {
-  transform: matrix(1, 0, 0, 1, 0, 0) translateX(calc(-100vw + 6rem)) !important;
+  transform: matrix(1, 0, 0, 1, 0, 0) translateX(calc(-100vw + 5rem + 1.25vw)) !important;
 }
 
 
@@ -179,9 +179,10 @@ main {
 .subTitle {
   padding-top: 2rem;
   padding-left: 4rem;
-  letter-spacing: 2px;
-  font-size: .8em;
-  text-transform: uppercase;
+  letter-spacing: .8px;
+  max-width: 38vw;
+  line-height: 1.4;
+  font-size: 1em;
   overflow: hidden;
   position: relative;
   color: #36352F;
@@ -381,6 +382,12 @@ main {
   html {
     font-size: 11px;
   }
+  .icons {
+    width: 62vw;
+  }
+  .subTitle {
+    width: 62vw
+  }
   nav {
     bottom: calc(-100% + 15rem);
     right: 0;
@@ -394,14 +401,16 @@ main {
   }
   .button {
     transform: none;
+    width: 100%;
+    text-align: center;
   }
   .closeSection {
     right: 7rem;
     top: 6.2rem;
   }
   nav > div:nth-of-type(1n) {
-    left: 1rem;
-    width: calc(100vw - 2rem);
+    left: 1.25vw;
+    width: calc(100vw - 2.5vw);
     height: 100vh;
   }
   nav > div:nth-of-type(2) {
@@ -414,10 +423,10 @@ main {
     transform: matrix(1, 0, 0, 1, 0, 0) translateY(calc(-100vh + 15rem)) !important;
   }
   nav > div.active:nth-of-type(2) {
-    transform: matrix(1, 0, 0, 1, 0, 0) translateY(calc(-100vh + 11rem)) !important;
+    transform: matrix(1, 0, 0, 1, 0, 0) translateY(calc(-100vh + 10rem + 1.25vw)) !important;
   }
   nav > div.active:nth-of-type(3) {
-    transform: matrix(1, 0, 0, 1, 0, 0) translateY(calc(-100vh + 6rem)) !important;
+    transform: matrix(1, 0, 0, 1, 0, 0) translateY(calc(-100vh + 5rem + 1.25vw)) !important;
   }
   nav > :not(.active):hover {
     transform: matrix(1, 0, 0, 1, 0, 0) translateY(-1.25rem) !important;
@@ -475,7 +484,8 @@ main {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 419px) {
+  
   .title {
     font-size: 10em;
   }
