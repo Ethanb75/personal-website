@@ -518,14 +518,17 @@ main {
   .sectionTitle.contact h2::before {
     bottom: -1.1em;
   }
+  nav {
+    bottom: calc(-100% + 9rem);
+  }
   nav > div {
-    top: 3rem;
+    top: 0rem;
   }
   nav > div:nth-of-type(2) {
-    top: 7rem;
+    top: 3rem;
   }
   nav > div:nth-of-type(3) {
-    top: 11rem;
+    top: 6rem;
   }
   nav > div.active:nth-of-type(1) {
     transform: matrix(1,0,0,1,0,0) translateY(calc(-100vh + 13rem)) !important;
