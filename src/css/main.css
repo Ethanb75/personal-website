@@ -163,8 +163,8 @@ main {
 .title {
   margin: 0;
   font-family: 'Righteous', Arial, Helvetica, sans-serif;
-  /* font-size: 20em; */
-  font-size: 24vw;
+  font-size: 20em;
+  /* font-size: 15vw; */
   padding-top: 38vh;
   padding-left: 5rem;
   color: #1B3440;
@@ -350,7 +350,7 @@ main {
     font-size: 12px;
   }
   .title {
-    /* font-size: 15em; */
+    font-size: 15em;
   }
   .sectionTitle {
     font-size: 4em;
@@ -458,7 +458,7 @@ main {
 
 @media screen and (max-width: 600px) {
   .title {
-    /* font-size: 12em; */
+    font-size: 14em;
     padding-top: 24vh;
   }
   .subTitle {
@@ -485,10 +485,16 @@ main {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 12em;
+  }
+}
+
 @media screen and (max-width: 419px) {
   
   .title {
-    /* font-size: 10em; */
+    font-size: 10em;
     padding-top: 16vh
   }
   .sectionContent {
@@ -534,7 +540,7 @@ main {
 
 @media screen and (max-width: 385px) {
   .title {
-    /* font-size: 7em; */
+    font-size: 7em;
   }
   div[data-location="projects"] article > div {
     position: relative;
