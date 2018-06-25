@@ -45,7 +45,7 @@ function addNavEventListeners(buttonArr) {
           el.classList.add('navTransition');
         });
       });
-    }, 1000);
+    }, 650);
 
   });
 }());
